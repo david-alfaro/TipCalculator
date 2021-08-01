@@ -1,0 +1,232 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+    
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 20px;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+.container{
+    background-color:hsl(0, 0%, 100%);
+    max-width: 1440px;
+    width: 60%;
+    height: 400px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 20px;
+    
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        height: auto;
+        
+    }
+    .tipContainer>p{
+        margin-top: 20px;
+    }
+    .numberOfPeople{
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container{
+        grid-template-columns: repeat(2,1fr);
+        height: auto;
+        
+    }
+    .tipContainer>p{
+        margin-top: 20px;
+    }
+    .numberOfPeople{
+        margin-top: 20px;
+    }
+    .buttonContainer{
+        
+       grid-auto-columns: min-content;
+        
+    }
+}
+
+.split{
+    grid-column: span 2;
+    margin: 20px;
+    
+}
+
+.result{
+    grid-column: span 2;
+    margin: 20px;
+    border-radius: 7px;
+    background-color: hsl(183, 100%, 15%);
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    "a"
+    "b"
+    "c" ;
+}
+
+.tipAmountContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 15px;
+    grid-area: a;
+}
+
+.totalContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px;
+    grid-area: b;
+    
+}
+
+.tipLabel,.totalLabel{
+    color: hsl(0, 0%, 100%);
+}
+
+.amountText{
+    font-size:32px;
+    color: hsl(172, 67%, 45%);
+    font-weight: 500;
+}
+
+.reserBtn{
+    display: inline-block;
+    grid-area: c;
+    align-self: end;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 8px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color:hsl(172, 69%, 31%);
+    color: hsl(183, 100%, 15%);
+}
+
+.reserBtn:hover{
+    background-color:hsl(185, 41%, 84%);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+.billInput > input{
+    width: 98%;
+    display: inline-block;
+    height: 28px;
+    font-size: 24px;
+    border:2px solid hsl(172, 67%, 45%);
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color:hsl(189, 41%, 97%) ;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+}
+
+.tipContainer>p{
+    margin-bottom: 10px;
+}
+
+
+.buttonContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:8px
+}
+
+.tipAmount{
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    background-color:hsl(183, 100%, 15%) ;
+    color: hsl(0, 0%, 100%);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.tipAmount:hover{
+    background-color:hsl(172, 67%, 45%) ;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.tipAmountInput{
+    font-size: 18px;
+    font-family: 'Space Mono', monospace;
+    display: inline-block;
+    background-color:hsl(189, 41%, 97%) ;
+    color: hsl(0, 2%, 50%);
+    font-weight: 700;
+    border: 2px solid hsl(172, 67%, 45%) ;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.numberOfPeople > input{
+    width: 98%;
+    display: inline-block;
+    height: 28px;
+    font-size: 24px;
+    color: hsl(183, 100%, 15%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 500;
+    border-radius: 3px;
+    padding: 5px;
+    margin-top: 10px;
+    background-color:hsl(189, 41%, 97%) ;
+    
+}
+
+.numberOfPeople>p{
+    color:darkred;
+    font-weight: 700;
+    width: 50%;
+    float: right;
+    text-align: right;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+.noerror{
+    border:2px solid hsl(172, 67%, 45%);
+}
+.error{
+    border: 2px solid darkred;
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

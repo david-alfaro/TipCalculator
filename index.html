@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!--RESET CSS MEYER WEB--->
+    <link rel="stylesheet" href="./assests/css/reset.css" />
+    <!--Linl to CSS-->
+    <link rel="stylesheet" href="./assests/css/styles.css" />
+
+    <!--Google Fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <p>spli</p>
+        <p>tter</p>
+      </div>
+
+      <section class="container">
+        <section class="split">
+          <form action="" class="bill">
+            <div class="billInput">
+              <label for="" class="amountLabel">Split</label>
+              <input
+                type="number"
+                placeholder="$"
+                class="amountInput"
+                autofocus
+                id="inputAmount"
+              />
+            </div>
+            <div class="tipContainer">
+              <p>Select Tip %</p>
+              <div class="buttonContainer">
+                <button class="tipAmount" id="tip5">5%</button>
+                <button class="tipAmount" id="tip10">10%</button>
+                <button class="tipAmount" id="tip15">15%</button>
+                <button class="tipAmount" id="tip25">25%</button>
+                <button class="tipAmount" id="tip50">50%</button>
+                <input
+                  class="tipAmountInput"
+                  id="customTip"
+                  placeholder="Custom"
+                  type="number"
+                />
+              </div>
+            </div>
+            <div class="numberOfPeople">
+              <label for="" class="numberPeopleLabel">Number of People</label>
+              <p class="hidden" id="numberPeopleError">Can't be zero</p>
+              <input
+                type="number"
+                placeholder="&#61447;"
+                style="font-family: Arial, FontAwesome"
+                class="numberPeopleInput noerror"
+                id="numberOfpeople"
+              />
+            </div>
+          </form>
+        </section>
+        <section class="result">
+          <div class="tipAmountContainer">
+            <div class="tipLabel">
+              <p class="titleResult">Tip Amount</p>
+              <p class="label2">/person</p>
+            </div>
+            <div class="amountText" id="tipPerPerson">$0.00</div>
+          </div>
+          <div class="totalContainer">
+            <div class="totalLabel">
+              <p class="titleResult">Total</p>
+              <p class="label2">/person</p>
+            </div>
+            <div class="amountText" id="totalPerPerson">$0.00</div>
+          </div>
+          <button class="reserBtn" id="resetBtn">Reset</button>
+        </section>
+      </section>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">David Alfaro V</a>.
+    </div>
+    <script src="./assests/js/main.js"></script>
+  </body>
+</html>
